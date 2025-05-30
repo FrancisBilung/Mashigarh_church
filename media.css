@@ -1,0 +1,196 @@
+@media only screen and (min-width:200px) and (max-width:575px){
+  header{
+    align-items:stretch; /*jitna jagah mil raha hai utna fail jao*/
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+  }
+    .headerleft{
+    justify-content: center;
+    margin-left: 55px;
+
+  }
+   
+    .searchbox button{
+      padding: 10px 
+    }
+.searchbox{
+    margin-left: 10px;
+    margin-right: 30px;
+}
+.about{
+    padding: 0px 15px;
+}
+.text {
+    font-size:13px ;
+}
+.text i{
+  margin-left:0px ;
+}
+.divmain{
+  margin:0px 20px ;
+}
+.divmain{
+     border-radius:50px ;
+    /* border: 1px solid black; */
+    overflow: hidden;
+ display: flex;
+ padding:0px 0px;
+
+ /* width: 100%;  
+   height:100vh; */
+ 
+}
+
+.textcenter h1{
+  display: none;
+  text-overflow:hidden ;
+}
+.first-video{
+    display: flex;
+     align-items: center; 
+     justify-content: center;
+    position:relative ;
+    top:10px ;
+    z-index: -1; 
+    /* border: 1px solid black; */
+    width: 100%;  
+   height:70vh; 
+   /* margin-bottom:50px ; */
+   /* border-radius:200px; */
+
+  } 
+
+ video{
+   border-radius: 60px;
+   width: 100%;  
+   height: 70vh;    
+    border-radius:0px ;
+    padding-right:px ;
+     margin-top:0px ; 
+    
+
+ }
+.video-text{
+    display: flex;
+  flex-direction: column;
+  position: absolute
+  
+
+   
+}
+.video-text p{
+    color:#ffffff;
+    line-height:22px;
+    opacity: 0.7;
+    font-size:15px ;
+   
+    
+   
+}
+
+.video-text {
+    font-size:10px;
+    gap: px;
+   
+}
+.para{
+  margin-top: 0px;
+}
+  
+/* welcome-page */
+
+
+ #main{
+        flex-direction: column;
+        /* border:1px solid black; */
+        
+    }
+    #main #left{
+        width: 100%;
+    }
+    #main #right{
+        width: 100%;
+    }
+/* section{
+  margin-top:50px ;  
+} */
+ .youtube-gallery{
+    display: grid;
+    width:100% ;
+    
+grid-template-columns: 50% 50% ;
+/* border: 1px solid red; */
+gap:5px;
+/* background-color:orange ; */
+
+ }
+
+
+ .video-text{
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    gap: 5px;
+    top: px;
+    padding-left:20px ; 
+    margin-top:110px ;  
+    
+}
+#textcenter h1{
+    font-size: 20px;
+    font-weight: 900;
+    margin-top:80px ;
+    font-family: "Playfair Display", serif;
+    
+}
+#textcenter p{
+  margin-top: 2px;
+}
+#lnavr a{
+  margin-left: 0px;
+}
+
+  footer{
+      padding-top:px;
+    }
+    .footer-mid-row1{
+      padding: 10px;
+      flex-direction:column;
+    }
+    .footermid-row1-right{
+      flex-basis: 48%;
+      
+    }
+    .footer-midrow3{
+      padding: opx 10px;
+
+    }
+    .footermid-row2{
+       flex-direction: column;
+       gap: 20px;
+       align-items:space-between;
+       
+       
+    }
+    .usefulLinks ul{
+      padding:0px 5px ;
+    }
+ 
+    .sociallinks{
+       margin-right:320px ;
+    }
+  .appicon img{
+    flex-basis:5% ;
+    width:20%;
+    
+  }
+ .appicon {
+  margin-left:100px ;
+ }
+
+
+}
+
+
+

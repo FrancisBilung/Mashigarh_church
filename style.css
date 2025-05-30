@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@400..700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@400..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@400..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family:sans-serif ;
+    text-decoration: none;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    border-bottom:1px solid #ccc ;
+    gap: 40px;
+    /* background-color:#E3E3E3; */
+}
+.headerleft{
+    display: flex;
+    align-items: center;
+
+}
+.logo {
+    padding: 0px 30px ;
+    border:0px;
+   
+}
+.logo img{
+    width: 40%;
+    height:40% ;
+    border-radius:10px ;
+}
+.searchbox{   /* flex grow ke help se headerleft ka logo and adderss ke baad jo bhi area wo wo sara area mene search box ko dediya hai*/
+    flex-grow:1 ;
+    border: 5px solid #f4f4f4;
+    display: flex;
+    background-color: #f8f8f8;
+    border-radius: 15px;
+}
+ .searchbox button{
+    padding: 15px;
+    border: none;
+    background-color:transparent ;
+ }
+.searchbox input{
+    flex-grow:1 ;
+    border: none;
+    background-color: transparent;
+}
+.searchbox input:focus{
+    outline: none;
+}
+.headerbtn{
+    display:flex;
+   width: 40%;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.text {
+  font-size: 20px;
+font-family: "Playfair Display", serif;
+color:black;
+}
+.first-video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative ;
+    top:50px ;
+    z-index: -1; 
+    /* border: 0.5px solid black; */
+    width: 88%;
+    height: 78vh;
+
+} 
+ 
+
+
+ .divmain{
+     border-radius:40px ;
+    /* border: 0.2px solid black; */
+    overflow: hidden;
+ display: flex;
+ margin-left:150px ;
+ box-shadow: #f8f8f8;
+
+}
+ .first-video .divmain video{
+  width: 100%;
+  height:78vh;
+  border-radius:50px ;
+    
+   
+    /* margin-top:0px ;  */
+ }
+.video-text{
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    gap: 20px;
+    top: 20px;
+    padding-left:20px ;   
+    
+}
+.video-text p{
+    color:#ffffff;
+    
+    opacity: 0.7;
+    font-size: 30px;
+     font-family: "Courgette", cursive; 
+   
+}
+.video-text {
+    
+    font-size:x-large;
+
+    
+    
+   
+} 
+.para{
+  margin-top: 0px;
+  
+}
+.video-text h1{
+    
+    color:#ffffff; 
+   font-family: "Playfair Display", serif;
+}
+
+
+ /* section{
+  margin-top:100px ;  
+}  */
+
+
+#main{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    margin-top:100px ; 
+}
+#left{
+    width: 40%;
+    height: 100%;
+       position: relative;  /* ye posiotion diya because text ko center karna tha */
+       overflow: scroll
+       /* border:1px solid black ; */
+       
+} 
+#lnav{
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+#lnavr{
+    display: flex;
+    align-items: center;
+}
+#lnavr a{
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+  color: #328839;
+ font-family: "Courgette", cursive; 
+}
+#lnavr i{
+    color: royalblue;
+}
+#left #textcenter{
+    position: absolute;    /*THIS CODE IS USE FOX CENTERING THE TEXT AND */
+    top: 50%;              /* AND ALSO LEFT DIV KE ANDER MAI POSITION RELATIVE DENA HAI */
+    left: 50%;             /* AND SEE THE MAGIC */
+    transform:translate(-50%, -50%) ;
+}
+#textcenter h1{
+    font-size: 90px;
+    font-weight: 900;
+}
+#textcenter p{
+    opacity: .6;
+    font-size: px;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: "Courgette", cursive; 
+}
+#textcenter a{
+   text-decoration: none;
+   color: black;
+   border-bottom: 1px solid black;
+   padding-bottom: 5px;
+   font-size: 13px;
+   font-weight: 600;
+   opacity: .6;
+}
+#right{
+    width: 60%;
+    height: 100%;
+    background-color: white;
+    overflow: hidden;
+    /* border:1px solid black ; */
+    
+}
+#rtop{
+    width: 100%;
+    height: 50%;
+  background-color: royalblue;
+  display: flex;
+  overflow: hidden;
+}
+#rbottom{
+    width: 100%;
+    height: 50%;
+    background-image: url(https://scontent-del1-2.xx.fbcdn.net/v/t1.6435-9/43586582_1915843031814327_6684933978509541376_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=cf85f3&_nc_ohc=6j1o5GGmP1wQ7kNvwEVCqmm&_nc_oc=Adk9a-3IYxTOAV3-qhd2_0cE2guLik8oFG1_W5vyCxXlC5gqpZkTk8aPmh1NKmZTDfE&_nc_zt=23&_nc_ht=scontent-del1-2.xx&_nc_gid=xW14w8DH3l4yJb5wlf1ePA&oh=00_AfK29nKw9AY178dnPS10o9cbrLLOZDKvk-boaMxmVmceQg&oe=686158D7);
+    background-size: cover;
+    background-position:center;
+    overflow: hidden;
+}
+#rtopleft{
+    width: 55%;
+    height: 100%;
+    background-image:url(https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrm6-MWIlP7zFXItvgZ-4lRyO-cFKrqnmENfgBURBG1OfMlkKL-O8AHP7KJ3wKKfn1fLWrOppHMEP1g_GL4ao0NUvuCMj-XsIHl80KpMqXnnvCXh_n8MeIVMjUwGquyItjs42di=s1360-w1360-h1020-rw) ;
+    background-size: cover;
+    background-position:center;
+overflow: hidden;
+}
+#rtopright{
+    width: 45%;
+    height: 100%;
+    background-image:url(https://scontent-del2-1.xx.fbcdn.net/v/t1.6435-9/43636073_1915842851814345_6967200019476643840_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=cf85f3&_nc_ohc=WcBI_s7S1IsQ7kNvwGyTMMo&_nc_oc=AdnqAyqhHJLJrkTZFt-_ac19g6BVqh8dW8J7m541GHXLLPXFpF7toPCosc_epMKmqns&_nc_zt=23&_nc_ht=scontent-del2-1.xx&_nc_gid=JB_BcnfAN7MN0-yMJLog9A&oh=00_AfL-93nzxvvSAhBK-geTGfAs9gsRtd_58J5Tp_7TTlKs1Q&oe=686153F2) ;
+    background-size: cover;
+    background-position:bottom ;
+    overflow: hidden;
+}
+
+
+
+.smallthingsbanner p {
+    display: inline-block;
+    margin: 0;
+    color: #4f4c4d;
+    text-transform: uppercase;
+    /* font-family: roboto-condensed, sans-serif; */
+    font-size: 6.25vw;
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    font-family: "Courgette", cursive; 
+
+}
+.smallthingsbanner {
+    width: 100% !important;
+    overflow: hidden;
+    padding: 44px 0 40px;
+    background-image: url(/Themes/VineyardCincy2020/Assets/_img/SubtleTexture_KidsStudents.png);
+    background-position: center;
+}
+.smallthingsbanner .block-content {
+    display: inline-block;
+    width: auto !important;
+}
+.smallthingsbanner .block-content > div {
+    white-space: nowrap;
+    white-space-collapse: collapse;
+   
+    animation: marquee-loop-rtl 60s linear infinite;
+    
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: marquee-loop-rtl;
+  
+}
+
+
+
+ .youtube-gallery{
+    display: grid;
+    width:100% ;
+    
+grid-template-columns: 25% 25% 25% 25%;
+/* border: 1px solid red; */
+gap:5px;
+/* background-color:orange ; */
+
+ }
+ img{
+    width: 90%;
+    height: 100%;
+    border-radius: 20px;
+}
+ iframe{
+    width: 90%;
+    height: 100%;
+    border-radius: 20px;
+}
+  footer{
+    padding: 40px 0px 0px 0px;
+}
+.footer-mid{
+   max-width: 1280px;
+   margin: auto;
+}
+.footermid-row1{
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    
+}
+.footermid-row1-left{
+    flex-basis:30% ;
+}
+.footermid-row1-left h3{
+    margin-bottom:20px ;
+}
+.usefulLinks{
+    display: flex;
+
+}
+.usefulLinks ul{
+    flex-basis:33% ;
+    list-style:none ;
+}
+.usefulLinks ul li a{
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: block;
+    color:rgb(102, 102, 102);
+}
+.footermid-row1-right{
+    flex-basis: 70%;
+}
+.categoryheadingrow1{
+    display: flex;
+    margin-bottom:20px ;
+    gap: 15px;
+    align-items:center;
+}
+.categoryheadingrow1 a{
+    color: #328839;
+}
+.footermid-row3 p{
+   padding: 20px 0px;
+   font-size: 14px;
+   line-height:20px;
+   color:rgb(102, 102, 102); ;
+}
+.footermid-row2{
+  background-color: #fcfcfc;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px 0px;
+}
+.footermid-row2 p{
+    flex-basis:40% ;
+    font-size:14px ;
+    text-align: center;
+    
+}
+.appicon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-basis: 5%;
+}
+.appicon h1{
+    flex-basis:100% ;
+    margin-right:5px ;
+}
+.sociallinks{
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+    margin-left:300px ;
+}
+.sociallinks i{
+ width:40px ;
+ color: white;
+ height: 40px;
+ border-radius:50% ;
+ display: flex;
+ align-items:center;
+ justify-content: center;
+ background-color:#1f1f1f ;
+
+}
+
+
+
+
+
+  @keyframes marquee-loop-rtl{
+     0%{
+        transform: translateX(calc(-100%  - 32px));
+    }
+    100%{
+        transform: translateX(0);
+        /* transform: translateX(calc(-100% - 32px)); */
+    }
+ }
